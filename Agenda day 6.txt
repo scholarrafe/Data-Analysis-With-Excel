@@ -1,0 +1,28 @@
+Agenda:
+
+	- vLookup with match function
+	- limitation of vlookup
+	- Index and match
+	- data validation and list with lookup
+
+1. Lookup with match function: 
+	why - in vlookup input we have to give the column number of the data we want to fetch, but if there is so many
+		columns in the data and it's hard to findout the column number then Match Function comes into to picture.
+	we have to use : vlookup(lookup_value, lookup_array, match(lookup_column_name, column_headings))
+	 
+2. Limitation of vlookup: 
+
+	1. you are searching for the column value always should be in the right side of lookup array. 
+	2. for Approximate match, data must be sorted in ascending order.
+
+   here xLookup() comes into the picture. it allow this. for this you just have select the lookup column and target column
+	XLookup can give output of multiple column.
+3. data validation: you can create dropdown manu for data any cell. going to Data ribbon
+
+4. we can get exact same output like xlookup if we use index+match, =Index(output_colum,Match(lookup_value,lookup_column,0))
+
+	- for double lookup we can use =index(table,match(o),match(col))
+
+
+5. Text : 
+ 	- can use textjoin() or concat() to join two text column(full_name from first_name and last_name)
